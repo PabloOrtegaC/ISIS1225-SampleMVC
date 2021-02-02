@@ -71,3 +71,11 @@ def createTagList():
     """
     taglist = lt.newList(datastructure='SINGLE_LINKED')
     return taglist
+
+def addBookTags(booktagfile):
+    """
+    Esta funcion crea una lista vacia.  Esta lista se utilizara
+    para ir guardando la informacion en el archivo de tags.
+    """
+    booktags= lt.newList(datastructure='SINGLE_LINKED',filename=booktagfile)
+    return booktags
